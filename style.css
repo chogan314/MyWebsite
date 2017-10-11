@@ -67,7 +67,7 @@
 }
 
 #text-area {
-    font-family: 'Roboto', sans-serif;    
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     flex: 999 1 600px;
     margin: 0 20px;
@@ -85,8 +85,7 @@
     font-size: 26px;
 }
 
-#text-area p
-{
+#text-area p {
     margin-top: 16px;
     margin-bottom: 16px;
 }
@@ -111,4 +110,22 @@
     flex: 1 0 auto;
     margin: 0 20px;
     margin-bottom: 20px;
+}
+
+#index,
+#index * {
+    list-style-type: none;
+}
+
+#index li {
+    cursor: pointer;
+    user-select: none;
+}
+
+#index>li>ul {
+    display: none;
+}
+
+.show-children>ul {
+    display: block !important;
 }
