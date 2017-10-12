@@ -133,7 +133,7 @@
     display: block !important;
 }
 
-.index-entry {
+#index li>div:first-child {
     width: 100%;
     cursor: pointer;
     user-select: none;
