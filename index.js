@@ -1,9 +1,10 @@
 $(document).ready(function() {
-    $('#index li>ul').parent().click(function() {
-        if ($(this).hasClass("show-children")) {
-            $(this).removeClass("show-children");
+    $('#index li>ul').parent().find(".index-entry").click(function() {
+        if ($(this).parent().hasClass("show-children")) {
+            $(this).parent().removeClass("show-children");
+            $(this).parent().find("li").removeClass("show-children");
         } else {
-            $(this).addClass("show-children");
+            $(this).parent().addClass("show-children");
         }
     });
 });

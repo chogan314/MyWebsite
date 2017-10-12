@@ -117,15 +117,24 @@
     list-style-type: none;
 }
 
-#index li {
-    cursor: pointer;
-    user-select: none;
+#index>li ul {
+    display: none;
 }
 
-#index>li>ul {
-    display: none;
+#index>li>ul>li {
+    padding-left: 20px;
+}
+
+#index>li>ul>li>ul>li {
+    padding-left: 20px;
 }
 
 .show-children>ul {
     display: block !important;
+}
+
+.index-entry {
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
 }
