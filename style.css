@@ -137,4 +137,16 @@
     width: 100%;
     cursor: pointer;
     user-select: none;
+    background: #5E5E5E;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 0 5px 0;
+}
+
+#index li:last-child>div>:first-child {
+    margin: 0;
+}
+
+#index li>div:first-child:hover {
+    background: #444444;
 }
