@@ -9,10 +9,11 @@
 }
 
 #container {
-    min-width: 600px;
+    min-width: 400px;
 }
 
 #nav-bar {
+    width: 100%;
     padding: 0 5px 0 5px;
     display: flex;
     flex-flow: row wrap;
@@ -22,8 +23,9 @@
 
 #nav-menu-container {
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
-    flex: 0 0 auto;
+    flex: 0 1 auto;
 }
 
 #nav-bar-filler-right {
@@ -61,7 +63,7 @@
 #content {
     /* margin: 0 auto; */
     padding: 30px 10px 10px 10px;
-    max-width: 1200px;
+    flex: 0 1 1200px;
     display: flex;
     flex-wrap: wrap-reverse;
 }
@@ -145,6 +147,11 @@
 
 #index li:last-child>div>:first-child {
     margin: 0;
+}
+
+#index a {
+    text-decoration: none;
+    color: white;
 }
 
 #index li>div:first-child:hover {
