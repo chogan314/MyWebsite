@@ -39,6 +39,7 @@
 }
 
 .menu-item {
+    user-select: none;
     font-family: 'Asap Condensed', sans-serif;
     font-size: 24px;
     color: white;
@@ -65,7 +66,6 @@
     padding: 30px 10px 10px 10px;
     flex: 0 1 1200px;
     display: flex;
-    flex-wrap: wrap-reverse;
 }
 
 #text-area {
@@ -151,9 +151,20 @@
 
 #index a {
     text-decoration: none;
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+    background: #5E5E5E;
     color: white;
+    padding: 5px 10px;
+    margin: 0 0 5px 0;
+    display: block;
 }
 
 #index li>div:first-child:hover {
+    background: #444444;
+}
+
+#index a:hover {
     background: #444444;
 }
