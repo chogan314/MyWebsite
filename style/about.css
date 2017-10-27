@@ -1,11 +1,18 @@
-    #about-content {
-    padding: 60px 10px 10px 10px;
-    display: flex;
+/**
+ *  Extended rules
+ */
+
+#content {
+    padding: 60px 20px 20px 20px;
     flex: 0 1 800px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+/**
+ *  New rules
+ */
 
 #intro {
     margin: 0 auto;
@@ -34,16 +41,3 @@
     font-size: 26px;
     margin: 0;
 }
-
-#description {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #313131;
-}
-
-#description>* {
-    margin-bottom: 16px;
-}
-
-#description>*:last-child {
-    margin-bottom: 0;
