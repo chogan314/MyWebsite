@@ -15,16 +15,22 @@
     margin: 0 20px;
 }
 
+#index-container {
+    max-width: calc(100% - 40px);
+    flex: 1 0 auto;
+    margin: 0 20px;
+    margin-bottom: 20px;    
+}
+
 #index {
     font-family: 'Asap Condensed', sans-serif;
     font-size: 20px;
-    flex: 1 0 auto;
-    margin: 0 20px;
-    margin-bottom: 20px;
+    min-width: 100%;
 }
 
 #index,
 #index * {
+    max-width: 100%;
     list-style-type: none;
 }
 
@@ -44,7 +50,8 @@
     display: block !important;
 }
 
-#index li>div:first-child {
+#index li>div {
+    display: flex;
     width: 100%;
     cursor: pointer;
     user-select: none;
@@ -52,10 +59,6 @@
     color: white;
     padding: 5px 10px;
     margin: 0 0 5px 0;
-}
-
-#index li:last-child>div>:first-child {
-    margin: 0;
 }
 
 #index a {
@@ -76,4 +79,9 @@
 
 #index a:hover {
     background: #444444;
+}
+
+#index .expand-symbol {
+    width: 16px;
+    line-height: 20px;
 }
